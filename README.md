@@ -14,11 +14,14 @@ $$\\begin{equation}
 where $x_p(t) \in \mathbf{R}^{n}$ is a measurable state vector and $u(t) \in \mathbf{R}^{m}$ is a control input vector. The matrices $A_p \in \mathbf{R}^{n \times n}$  and $\Lambda \in \mathbf{R}^{m \times m}$ are unkown and $\Lambda$ has only diagonal positive entries. The control input is assumed to be magnitude limited by $u_0$, which is represented using the function $R(\cdot)$ as
 
 $$\\begin{equation}
-    R_{u_0}(u(t)) = \\begin{dcases*}
+    R_{u_0}(u(t)) = \\begin{dcases}
         $$u(t)$$           & if  $\| u(t)\| \leq u_0$ \\
         $$u_0 \frac{u}{\| u(t) \|}$$  & if  $\| u(t) \| > u_0$ 
-    \\end{dcases*}
+    \\end{dcases}
 \\end{equation}$$
+
+$K_{\mathcal{C}} (x) = \{ u \in \mathcal{U} : L_{Ax} h(x) + L_{B} h(x) u + \alpha(h(x)) \geq 0 \}$
+
 
 The objective is to determine a $u(t)$ for \eqref{LinearPlantModel} such that the plant state $x_p(t)$ tracks a desired reference $ x_d(t)$ and that for any initial condition $x_0 := x(t_0) \in S$, it is ensured that the plant state vector $x_p(t)$ stays within the safe set $S \in \mathbf{R}^n$ i.e. the control input ensures that there is a CBF with $h(x,u) \geq 0$ for $\forall t \geq 0$.
 
