@@ -14,7 +14,7 @@ $$\\begin{equation}
 where $x_p(t) \in \mathbf{R}^{n}$ is a measurable state vector and $u(t) \in \mathbf{R}^{m}$ is a control input vector. The matrices $A_p \in \mathbf{R}^{n \times n}$  and $\Lambda \in \mathbf{R}^{m \times m}$ are unkown and $\Lambda$ has only diagonal positive entries. The control input is assumed to be magnitude limited by $\vert u_0 \vert$, which leads to the following closed set
 
 $$\\begin{equation}
-\mathcal{U} = \{ u \in \mathbf{R}^{m} : - u_0 \geq u(t) \geq u_0 \}
+\mathcal{U} = \begin{Bmatrix} u \in \mathbf{R}^{m} : - u_0 \geq u(t) \geq u_0 \end{Bmatrix}
 \\end{equation}$$
 
 
@@ -30,7 +30,7 @@ $$\\begin{equation}
  A closed set $\mathcal{C} \in \mathbf{R}^n$, which we consider as a safe set, is defined in the following form:
   
   $$\\begin{equation}
-      \mathcal{C} = \{ x \in \mathbf{R}^n : h(x) \geq 0 \}
+      \mathcal{C} = \begin{Bmatrix} x \in \mathbf{R}^n : h(x) \geq 0 \end{Bmatrix}
   \\end{equation}$$
   
 with $h: \mathbf{R}^n \times \mathbf{R}^p \to \mathbf{R}$ being a  continuously differentiable function, called  control barrier function (CBF).
