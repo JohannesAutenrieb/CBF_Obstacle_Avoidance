@@ -8,7 +8,6 @@ This collection of MATLAB scripts intends to study the performance of state-cons
 We consider a linear plant with parametric uncertainties of the form:
 
 $$\\begin{equation}
-\label{LinearPlantModel}
 \dot{x}_p(t) = A_p x_p(t) + B_p \Lambda (R(u(t))(t))
 \\end{equation}$$
 
