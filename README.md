@@ -68,11 +68,11 @@ $$\\begin{align}
 After each simulation run, a plot with results is given out. An example of such a plot is given here:
 
 <p align=center>
-<img src="https://github.com/JohannesAutenrieb/CBF_Obstacle_Avoidance/blob/main/Images/multiple_traj2d.png" alt="MISSION_GUI" height=1000px>
+<img src="https://github.com/JohannesAutenrieb/CBF_Obstacle_Avoidance/blob/main/Images/multiple_traj2d.png" alt="MISSION_GUI">
 </p>
 
 <p align=center>
-<img src="https://github.com/JohannesAutenrieb/CBF_Obstacle_Avoidance/blob/main/Images/Example_results.png" alt="MISSION_GUI" height=1000px>
+<img src="https://github.com/JohannesAutenrieb/CBF_Obstacle_Avoidance/blob/main/Images/Example_results.png" alt="MISSION_GUI">
 </p>
 
 
