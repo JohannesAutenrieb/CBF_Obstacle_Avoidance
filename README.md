@@ -8,7 +8,7 @@ This collection of MATLAB scripts intends to study the performance of state-cons
 We consider a linear plant with parametric uncertainties of the form:
 
 $$\\begin{equation}
-\dot{x}_p(t) = f(x(t)) + g(x) u(t)
+\dot{x}(t) = f(x(t)) + g(x) u(t)
 \\end{equation}$$
 
 where $x(t) \in \mathbf{R}^{n}$ is a measurable state vector and $u(t) \in \mathbf{R}^{m}$ is a control input vector. The control input is assumed to be magnitude limited by $\vert u_0 \vert$, which leads to the following closed set for the control input space
