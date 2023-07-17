@@ -50,7 +50,7 @@ with $\gamma$ being $\gamma > 0$.
 A linear controller of the following form is defined:
 
 $$\\begin{align}
-u_d = K \tilde{x}
+u_d = -K \tilde{x}
 \\end{align}$$
 
 with $K$ being Hurwitz and $\tilde{x} = x - x_d$. The linear controller is tuned regarding the desired control performance but cannot generate safe commands by itself. Therefore the following CLF-QP safety filter is used to adapt $u_d$ such that $x(t)$ stays within $\mathcal{C}$ for any $t$.
