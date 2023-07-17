@@ -8,10 +8,10 @@ This collection of MATLAB scripts intends to study the performance of state-cons
 We consider a linear plant with parametric uncertainties of the form:
 
 $$\\begin{equation}
-\dot{x}_p(t) = A_p x_p(t) + B_p \Lambda (R(u(t))(t))
+\dot{x}_p(t) = f(x(t)) + g(x) u(t)
 \\end{equation}$$
 
-where $x_p(t) \in \mathbf{R}^{n}$ is a measurable state vector and $u(t) \in \mathbf{R}^{m}$ is a control input vector. The matrices $A_p \in \mathbf{R}^{n \times n}$  and $\Lambda \in \mathbf{R}^{m \times m}$ are unkown and $\Lambda$ has only diagonal positive entries. The control input is assumed to be magnitude limited by $\vert u_0 \vert$, which leads to the following closed set for the control input space
+where $x(t) \in \mathbf{R}^{n}$ is a measurable state vector and $u(t) \in \mathbf{R}^{m}$ is a control input vector. The control input is assumed to be magnitude limited by $\vert u_0 \vert$, which leads to the following closed set for the control input space
 
 $$\\begin{equation}
 \mathcal{U} = \begin{Bmatrix} u \in \mathbf{R}^{m} : - u_0 \geq u(t) \geq u_0 \end{Bmatrix}
@@ -62,6 +62,7 @@ $$\\begin{align}
 \end{aligned} \\
 &\text{s.t.} \notag \\
 & L_f h(x) + L_g h(x)u - \gamma h(x) \leq 0, \notag
+& -u_0 \geq u \geq u_0, \notag
 \\end{align}$$
 
 After each simulation run, a plot with results is given out. An example of such a plot is given here:
@@ -75,7 +76,7 @@ After each simulation run, a plot with results is given out. An example of such 
 
 The scripts use external libraries, which need to be installed.
 * YAMLIP
-* Export_fiq
+* Export_fig
 
 
 Further, the following MATLAB toolboxes are needed:
