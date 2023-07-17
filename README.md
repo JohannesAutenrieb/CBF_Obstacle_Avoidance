@@ -61,7 +61,7 @@ $$\\begin{align}
   &\|u - u_d\|_2
 \end{aligned} \\
 &\text{s.t.} \notag \\
-& L_f h(x) + L_g h(x)u - \gamma h(x) \leq 0, \notag
+& L_f h(x) + L_g h(x)u - \gamma h(x) \leq 0, \notag\\
 & -u_0 \geq u \geq u_0, \notag
 \\end{align}$$
 
