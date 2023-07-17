@@ -19,7 +19,7 @@ $$\\begin{equation}
 
 The objective is to determine a $u(t)$ for \eqref{LinearPlantModel} such that the plant state $x(t)$ tracks a desired reference $x_d(t)$ and that for any initial condition $x_0 := x(t_0) \in S$, it is ensured that the plant state vector $x(t)$ stays within the safe set $S \in \mathbf{R}^n$ i.e. the control input ensures that there is a CBF with $h(x,u) \geq 0$ for $\forall t \geq 0$.
 
- A closed set $\mathcal{C} \in \mathbf{R}^n$, which we consider as a safe set, is defined in the following form:
+ A superlevel set $\mathcal{C} \in \mathbf{R}^n$, which we refer to as a safe set, is defined in the following form:
   
   $$\\begin{equation}
       \mathcal{C} = \begin{Bmatrix} x \in \mathbf{R}^n : h(x) \geq 0 \end{Bmatrix}
