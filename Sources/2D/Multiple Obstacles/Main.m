@@ -97,7 +97,7 @@ t = 0;
 for k = 1:total_k
     
     % Computing needed control input to get desired cruise behaviour
-    u_des = params.k_fb*(x-params.x_d);% + params.k_r*params.x_d;
+    u_des = params.k_fb*(x-params.x_d);
     
     % saftey filter on computed control input
     [u,h] = SafetyFilter(x,u_des, params);
